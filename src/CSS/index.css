@@ -1,0 +1,112 @@
+/* style.css - Basado en la imagen de CreaFit */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente limpia por defecto */
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eef2ff; /* El fondo azul pálido de la imagen */
+    padding: 20px;
+}
+
+.login-card {
+    background: white;
+    width: 100%;
+    max-width: 400px; /* Tamaño aproximado de la tarjeta */
+    padding: 3rem 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Sombra suave */
+    text-align: center;
+}
+
+.card-header {
+    margin-bottom: 2.5rem;
+}
+
+.logo {
+    width: 90px;
+    height: 64px;
+}
+
+/* El icono de paquete es un SVG simple */
+.logo-circle svg {
+    width: 32px;
+    height: 32px;
+}
+
+h1.app-title {
+    font-size: 1.25rem; /* El tamaño de texto "Sistema de Gestión CREAFIT" */
+    font-weight: 600;
+    color: #111827; /* Gris muy oscuro, casi negro */
+    margin-bottom: 0.5rem;
+}
+
+p.app-subtitle {
+    color: #6b7280; /* El color de texto de "Tienda de Suplementos Alimenticios" */
+    font-size: 0.875rem;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+    text-align: left; /* Alinea los labels a la izquierda */
+}
+
+label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151; /* Gris oscuro para el label */
+    margin-bottom: 0.5rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #f3f4f6; /* El fondo gris claro de los inputs en la imagen */
+    border: 1px solid #d1d5db; /* Un borde sutil */
+    border-radius: 6px;
+    font-size: 0.875rem;
+    outline: none;
+}
+
+input:focus {
+    background-color: white; /* Resalta el input al hacer foco */
+    border-color: #a5b4fc; /* Color de foco azul claro */
+    box-shadow: 0 0 0 3px rgba(165, 180, 252, 0.3);
+}
+
+.error-message {
+    display: none; /* Oculto por defecto */
+    align-items: center;
+    gap: 8px;
+    background: #fef2f2;
+    color: #dc2626;
+    padding: 0.75rem;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    margin-bottom: 1.25rem;
+    text-align: left;
+}
+
+.btn-login {
+    width: 100%;
+    background: #111827; /* El color negro/gris muy oscuro del botón en la imagen */
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-login:hover {
+    background: #1f2937; /* Un gris un poco más claro al hover */
+}

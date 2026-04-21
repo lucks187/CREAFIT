@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CreaFit - Dashboard Gerente</title>
+    <link rel="stylesheet" href="../CSS/indexmanager.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="">
+                    <img class="logo" src="../../images/CF.png">
+                </div>
+                <div>
+                    <h2>CREAFIT</h2>
+                    <p>Sistema de Gestión</p>
+                </div>
+            </div>
+
+            <div class="user-profile">
+                <div class="user-info">
+                    <p><b id="nombre-trabajador">Cargando...</b></p>
+                    <p><span id="puesto-trabajador"></span></p>
+                </div>
+            </div>
+
+            <nav class="menu">
+                <a href="#" class="menu-item active">
+                    <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house w-5 h-5" data-fg-dqpt22="1.14:93.308:/src/app/components/Sidebar.tsx:79:17:3096:28:e:Icon" data-fgid-dqpt22=":r1i:"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg></span> Inicio
+                </a>
+                <a href="consultate-product.html" class="menu-item">
+                    <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search w-5 h-5 __web-inspector-hide-shortcut__" data-fg-dqpt22="1.14:93.308:/src/app/components/Sidebar.tsx:79:17:3096:28:e:Icon" data-fgid-dqpt22=":r1m:"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg></span> Consultar producto
+                </a>
+                <a href="sales-details.html" class="menu-item">
+                    <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-receipt w-5 h-5" data-fg-dqpt22="1.14:93.308:/src/app/components/Sidebar.tsx:79:17:3096:28:e:Icon" data-fgid-dqpt22=":r1q:"><path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"></path><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path><path d="M12 17.5v-11"></path></svg> </span> Detalle de ventas
+                </a>
+                <a href="Preturns.html" class="menu-item">
+                    <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rotate-ccw w-5 h-5" data-fg-dqpt22="1.14:93.308:/src/app/components/Sidebar.tsx:79:17:3096:28:e:Icon" data-fgid-dqpt22=":r1u:"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5"></path></svg> </span> Devoluciones
+                </a>
+                <a href="gestion_inventario.html" class="menu-item">
+                    <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-package-x w-5 h-5" data-fg-dqpt22="1.14:93.308:/src/app/components/Sidebar.tsx:79:17:3096:28:e:Icon" data-fgid-dqpt22=":r22:"><path d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14"></path><path d="m7.5 4.27 9 5.15"></path><polyline points="3.29 7 12 12 20.71 7"></polyline><line x1="12" x2="12" y1="22" y2="12"></line><path d="m17 13 5 5m-5 0 5-5"></path></svg></span> Gestión de inventario
+                </a>
+                <a href="empleados.html" class="menu-item">
+                    <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users w-5 h-5" data-fg-dqpt22="1.14:93.308:/src/app/components/Sidebar.tsx:79:17:3096:28:e:Icon" data-fgid-dqpt22=":r26:"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg> </span> Empleados
+                </a>
+                <a href="reportes.html" class="menu-item">
+                    <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-column w-5 h-5" data-fg-dqpt22="1.14:93.308:/src/app/components/Sidebar.tsx:79:17:3096:28:e:Icon" data-fgid-dqpt22=":r2a:"><path d="M3 3v16a2 2 0 0 0 2 2h16"></path><path d="M18 17V9"></path><path d="M13 17V5"></path><path d="M8 17v-3"></path></svg> </span> Generar reportes
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="index.html" class="logout-btn" id ="btn-exit">
+                    <span class="icon">🚪</span> Cerrar sesión
+                </a>
+            </div>
+        </aside>
+
+        <main class="content">
+            <header class="main-header">
+                <h1>Bienvenido, Carlos Ramírez</h1>
+                <p>Sistema de gestión de productos y ventas</p>
+            </header>
+
+            <section class="stats-grid">
+                <div class="stat-card">
+                    <div class="card-top">
+                        <span class="label">Productos</span>
+                        <div class="icon-box blue">📦</div>
+                    </div>
+                    <div class="card-value">45</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="card-top">
+                        <span class="label">Ventas del día</span>
+                        <div class="icon-box green">🛒</div>
+                    </div>
+                    <div class="card-value">12</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="card-top">
+                        <span class="label">Ingresos</span>
+                        <div class="icon-box purple">📈</div>
+                    </div>
+                    <div class="card-value">$8,450</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="card-top">
+                        <span class="label">Stock bajo</span>
+                        <div class="icon-box red">⚠️</div>
+                    </div>
+                    <div class="card-value">3</div>
+                </div>
+            </section>
+        </main>
+    </div>
+<script src="../JS/dashboard.js"></script>
+
+</body>
+</html>

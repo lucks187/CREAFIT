@@ -1,0 +1,146 @@
+/* tabla_productos_style.css - Recreando el diseño de Figma */
+
+.main-header-inline {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.icon-header {
+    font-size: 2rem;
+    color: #1e293b;
+}
+
+.main-header-inline h1 {
+    font-size: 1.8rem;
+    color: #1e293b;
+    font-weight: 700;
+}
+
+/* Panel Blanco */
+.produc-panel {
+    background: white;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    padding: 25px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+}
+
+.panel-header h2 {
+    font-size: 1.1rem;
+    color: #1e293b;
+    margin-bottom: 20px;
+}
+
+/* Buscador Gris */
+.search-container {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 12px 15px 12px 45px;
+    background-color: #f1f5f9; /* Gris claro de Figma */
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    outline: none;
+    color: #1e293b;
+}
+
+.search-container input::placeholder {
+    color: #94a3b8;
+}
+
+/* Tabla Estilo Figma */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+th {
+    text-align: left;
+    padding: 15px;
+    color: #1e293b;
+    font-weight: 600;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+td {
+    padding: 15px;
+    color: #1e293b;
+    vertical-align: middle;
+}
+
+.text-muted {
+    color: #64748b;
+}
+
+/* Filas para productos caducados (Fondo verde claro) */
+.row-expired {
+    background-color: #f0fdf4;
+}
+
+/* Etiquetas de Categoría (Borde Gris) */
+.tag-category {
+    display: inline-block;
+    padding: 4px 10px;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    color: #475569;
+    background-color: white;
+}
+
+/* Badges de Estado (Fondos de Color) */
+.badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: center;
+    min-width: 80px;
+}
+
+/* Colores de Badges exactos de la imagen */
+.badge-normal {
+    background-color: #111827; /* Negro */
+    color: white;
+}
+
+.badge-warning {
+    background-color: #fef3c7; /* Amarillo claro */
+    color: #92400e; /* Marrón oscuro */
+}
+
+.badge-danger {
+    background-color: #fee2e2; /* Rojo claro */
+    color: #991b1b; /* Rojo oscuro */
+}
+
+.badge-success {
+    background-color: #dcfce7; /* Verde claro */
+    color: #166534; /* Verde oscuro */
+}
+
+.logo {
+    width: 45px;
+    height: 32px;
+}

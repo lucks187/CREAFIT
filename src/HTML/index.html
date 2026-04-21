@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreaFit - Login</title>
+    <link rel="stylesheet" href="../CSS/index.css">
+</head>
+<body>
+    <div class="login-card">
+        <div class="card-header">
+            <div >
+                <img class="logo" src="../../images/CF.png">
+            </div>
+            <h1 class="app-title">Sistema de Gestión CREAFIT</h1>
+        </div>
+        
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" placeholder="ingrese su correo" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" placeholder="••••••••" required>
+            </div>
+
+            <div id="errorMessage" class="error-message">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+                </svg>
+                <span>Credenciales incorrectas</span>
+            </div>
+
+            <button type="submit" class="btn-login"  >Iniciar sesión</button>
+        </form>
+    </div>
+    <script src="../JS/render.js"></script>
+
+
+</body>
+</html>

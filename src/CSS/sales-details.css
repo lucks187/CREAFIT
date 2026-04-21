@@ -1,0 +1,29 @@
+/* Estilos extra para botones de acción en Detalle de Ventas */
+.action-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-action {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    color: #1e293b;
+}
+
+.btn-action:hover {
+    background: #f8fafc;
+    border-color: #cbd5e1;
+}
+
+.table-footer {
+    margin-top: 20px;
+    font-size: 0.85rem;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CreaFit - Buscar Devolución</title>
+    <link rel="stylesheet" href="../CSS/indexmanager.css">
+    <link rel="stylesheet" href="../CSS/sales-details.css">
+    <link rel="stylesheet" href="../CSS/consultate-product.css">
+    <link rel="stylesheet" href="../CSS/Preturns.css">
+</head>
+<body>
+
+<div class="sistema-administrativo-de-tienda">
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo-box">
+                <span style="color: white; font-weight: bold;">C</span>
+            </div>
+            <div class="brand-text">
+                <h1>CREAFIT</h1>
+                <p>Sistema de Gestión</p>
+            </div>
+        </div>
+
+        <div class="user-info">
+                    <p><b id="nombre-trabajador">Cargando...</b></p>
+                    <p><span id="puesto-trabajador"></span></p>
+        </div>
+
+        <nav class="nav-menu">
+            <a href="#" class="nav-item">Inicio</a>
+            <a href="#" class="nav-item">Consultar producto</a>
+            <a href="#" class="nav-item">Detalle de ventas</a>
+            <a href="#" class="nav-item active">Devoluciones</a>
+            <a href="#" class="nav-item">Gestión de inventario</a>
+            <a href="#" class="nav-item">Empleados</a>
+        </nav>
+
+        <div style="padding: 20px; border-top: 1px solid #f3f4f6;">
+            <button style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #e5e7eb; background: white; cursor: pointer;">
+                Cerrar sesión
+            </button>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <header class="page-header">
+            <h2>Devoluciones</h2>
+            <p>Gestionar devoluciones de productos registrados en el sistema.</p>
+        </header>
+
+        <div class="data-card">
+            <div class="search-box">
+                <h3 style="margin-bottom: 15px; font-size: 16px;">Seleccionar venta</h3>
+                <input type="text" class="search-input" placeholder="Buscar por ID o vendedor...">
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID Venta</th>
+                        <th>Fecha</th>
+                        <th>Vendedor</th>
+                        <th>Total</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>#1001</strong></td>
+                        <td>18 de marzo de 2026</td>
+                        <td>María González</td>
+                        <td>$1197.00</td>
+                        <td><button class="btn-select">Seleccionar</button></td>
+                    </tr>
+                    <tr>
+                        <td><strong>#1002</strong></td>
+                        <td>18 de marzo de 2026</td>
+                        <td>María González</td>
+                        <td>$648.00</td>
+                        <td><button class="btn-select">Seleccionar</button></td>
+                    </tr>
+                    <tr>
+                        <td><strong>#1003</strong></td>
+                        <td>17 de marzo de 2026</td>
+                        <td>Ana Martínez</td>
+                        <td>$897.00</td>
+                        <td><button class="btn-select">Seleccionar</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</div>
+<script src="../JS/dashboard.js"></script>
+</body>
+</html>
