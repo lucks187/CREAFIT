@@ -8,7 +8,7 @@ const createWindow = () => {
   win = new BrowserWindow({
     width: 800,
     height: 600,
-    // Corregido: sin el ../
+
     icon: path.join(__dirname, 'images/CF.png'), 
     webPreferences: {
       nodeIntegration: true,
@@ -18,7 +18,6 @@ const createWindow = () => {
   win.loadFile('src/HTML/index.html');
 }
 
-// QUITAMOS EL REQUIRE DE CONTROLLERS QUE DABA ERROR
 
 ipcMain.on('login-attempt', async (event, datos) => {
   try {
@@ -29,11 +28,11 @@ ipcMain.on('login-attempt', async (event, datos) => {
     if (results.length > 0) {
       const usuarioEncontrado = results[0];
       const rol = results[0].rol;
-      // Corregido: rutas directas desde la raíz del proyecto
+
       if (rol === 'administrador') {
           win.loadFile('src/HTML/indexmanager.html');
       } else if (rol === 'vendedor') {
-          win.loadFile('src/HTML/sales-details.html');
+          win.loadFile('src/HTML/indexsalesman.html');
       } else if (rol === 'almacenista') {
           win.loadFile('src/HTML/consultate-product.html');
       }
@@ -44,7 +43,7 @@ ipcMain.on('login-attempt', async (event, datos) => {
         });
       });
     } else {
-      // Este es el mensaje que recibe tu render.js para mostrar el alert
+  
       event.reply('login-error', 'Usuario o contraseña incorrectos');
     }
   } catch (error) {
@@ -55,10 +54,8 @@ ipcMain.on('login-attempt', async (event, datos) => {
 });
 
 ipcMain.on('logout', () => {
-    // Regresamos a la pantalla de login
     win.loadFile('src/HTML/index.html');
     
-    // Opcional: Redimensionar la ventana si el login es más pequeño
     win.setSize(800, 600);
     win.center();
 });
